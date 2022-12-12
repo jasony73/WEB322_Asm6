@@ -13,7 +13,7 @@ const Schema = mongoose.Schema;
 const registration = mongoose.createConnection("mongodb+srv://Jason73:a0911052B@senecaweb.o5hhrxo.mongodb.net/?retryWrites=true&w=majority");
 const blog = mongoose.createConnection("mongodb+srv://Jason73:a0911052B@senecaweb.o5hhrxo.mongodb.net/?retryWrites=true&w=majority");
 
-app.use(express.static("img"));
+app.use(express.static("static"));
 
 const registration_schema = new Schema({
     "fname": String,
@@ -106,6 +106,8 @@ app.post("/article", function (req, res) {
         res.render("read_more", { image: data.image, id: data._id, read: data.content, title: data.title, date: data.date, layout: false });
     });
 });
+
+
 
 app.post("/update", ensureLogin, (req, res) => {
     blogcon.updateOne({
