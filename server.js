@@ -9,9 +9,9 @@ const app = express();
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
-//4qOR3EYlGGioqxKW
-const registration = mongoose.createConnection("mongodb+srv://tliu84:4qOR3EYlGGioqxKW@cluster0.fhmfm06.mongodb.net/registration3?retryWrites=true&w=majority");
-const blog = mongoose.createConnection("mongodb+srv://tliu84:4qOR3EYlGGioqxKW@cluster0.fhmfm06.mongodb.net/registration3?retryWrites=true&w=majority");
+// a0911052B
+const registration = mongoose.createConnection("mongodb+srv://Jason73:a0911052B@senecaweb.o5hhrxo.mongodb.net/?retryWrites=true&w=majority");
+const blog = mongoose.createConnection("mongodb+srv://Jason73:a0911052B@senecaweb.o5hhrxo.mongodb.net/?retryWrites=true&w=majority");
 
 app.use(express.static("img"));
 
